@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-item-list',
@@ -7,5 +7,16 @@ import { Component, Input } from '@angular/core';
 })
 export class ItemListComponent {
 
-  @Input() items: any =[];
+  @Input() items: any = [];
+
+  constructor() {
+  }
+
+  ngOnInit() {
+
+  }
+
+  ngOnChanges(){
+    console.log(this.items)
+  }
 }
