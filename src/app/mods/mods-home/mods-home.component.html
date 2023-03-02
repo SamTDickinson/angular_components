@@ -4,9 +4,12 @@
   <div modalTitle>I'm a reusable Title</div>
   <p>I'm a reusable Modal Componenet</p>
   <ng-container modalFooter>
-    <button class="ui button" (click)="onClick()">Close Me</button>
+    <button (click)="onClick()" class="ui button">Close Me</button>
   </ng-container>
 </app-modal>
 
 <app-divider>Accordian Component</app-divider>
 <app-accordion [accordianItems]="items"></app-accordion>
+
+
+
